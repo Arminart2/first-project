@@ -4,6 +4,8 @@ import localFont from "next/font/local"
 
 import "./globals.css";
 
+import Nav from "./components/nav/nav";
+
 export const metadata: Metadata = {
   title: "First-Project",
   description: "First-Project Course",
@@ -20,8 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` bg-slate-900 text-slate-200 ${iranSansFont.className}`}>
-        <main className="p-5">
+      <body className={` bg-[#14151C] text-[#FFFFFF] ${iranSansFont.className}`}>
+        <main >
+          <Nav/>
         {children}
         </main>
       </body>
